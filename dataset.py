@@ -37,5 +37,3 @@ fig.show()
 # Filtro
 filtro = df.query('preco > 30000 and modelo == "i3"')
 print(filtro)
-
-filtro.to_csv("carros_filtro.csv", index=False)
