@@ -55,11 +55,6 @@ O projeto consiste em vários scripts Python que trabalham juntos para processar
 - Contém o conjunto de dados sintético completo gerado por `dataset.py`.
 - Colunas: modelo, ano, preco, mileage.
 
-#### `carros_filtro.csv`
-- Contém um subconjunto filtrado dos dados de `carros_teste.csv`.
-- Critérios de filtro: preco > 30000 e modelo == "i3".
-- Colunas: mesmas de `carros_teste.csv`.
-
 ## Dependências
 
 Para executar os scripts, instale os seguintes pacotes Python:
@@ -74,7 +69,7 @@ pip install pandas plotly xgboost scikit-learn numpy
    ```
    python dataset.py
    ```
-   Isso criará `carros_teste.csv` e `carros_filtro.csv`, exibirá estatísticas e mostrará um histograma.
+   Isso criará `carros_teste.csv`, e exibirá estatísticas e mostrará um histograma.
 
 2. **Processar Dados com Classe Car**:
    ```
@@ -97,3 +92,4 @@ pip install pandas plotly xgboost scikit-learn numpy
 - **Aprendizado de Máquina (`analise.py`)**: Implementa um pipeline robusto de regressão para predição de preços. A transformação logarítmica do alvo ajuda com distribuições enviesadas de preços, e a codificação one-hot trata recursos categóricos. A avaliação do modelo fornece insights sobre a precisão da predição.
 
 Este projeto demonstra um fluxo de trabalho completo de ciência de dados, desde a criação de dados sintéticos até a modelagem preditiva, útil para aprendizado ou prototipagem de sistemas de análise de preços de carros.
+
